@@ -14,7 +14,7 @@ package edu.bu.met.cs665.email;
  */
 public class Frequent implements Email {
 
-  String greeting = "It's always our pleasure to serve you!";
+  private String greeting = "It's always our pleasure to serve you!";
 
   /**
    * Send email message to our clients.

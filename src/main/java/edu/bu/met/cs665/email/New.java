@@ -14,7 +14,7 @@ package edu.bu.met.cs665.email;
  */
 public class New implements Email {
 
-  String greeting = "Ready to start your journey!";
+  private String greeting = "Ready to start your journey!";
 
   /**
    * Send email message to our clients.

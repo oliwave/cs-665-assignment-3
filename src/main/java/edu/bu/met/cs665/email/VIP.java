@@ -14,7 +14,7 @@ package edu.bu.met.cs665.email;
  */
 public class Vip implements Email {
 
-  String greeting = "Dear VIP!";
+  private String greeting = "Dear VIP!";
 
   /**
    * Send email message to our clients.

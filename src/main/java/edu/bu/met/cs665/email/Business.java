@@ -14,7 +14,7 @@ package edu.bu.met.cs665.email;
  */
 public class Business implements Email {
 
-  String greeting = "Dear partner!";
+  private String greeting = "Dear partner!";
 
   /**
    * Send email message to our clients.

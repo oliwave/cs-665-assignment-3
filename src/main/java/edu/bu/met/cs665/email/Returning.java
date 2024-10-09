@@ -14,7 +14,7 @@ package edu.bu.met.cs665.email;
  */
 public class Returning implements Email {
 
-  String greeting = "Welcome back!";
+  private String greeting = "Welcome back!";
 
   /**
    * Send email message to our clients.

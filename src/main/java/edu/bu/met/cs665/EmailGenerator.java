@@ -16,7 +16,7 @@ import edu.bu.met.cs665.email.Email;
  */
 public class EmailGenerator {
 
-  Email email;
+  private Email email;
 
   /**
    * Create an object of a EmailGenerator.
@@ -32,7 +32,7 @@ public class EmailGenerator {
    * 
    * @param email The Email template you want to choose
    */
-  void changeEmailTemplate(Email email) {
+  public void changeEmailTemplate(Email email) {
     this.email = email;
   }
 
@@ -41,7 +41,7 @@ public class EmailGenerator {
    * 
    * @param message The customized message 
    */
-  void sendEmail(String message) {
+  public void sendEmail(String message) {
     this.email.sendEmail(message);
   }
 
