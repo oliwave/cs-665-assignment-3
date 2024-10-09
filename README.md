@@ -4,7 +4,7 @@
 | Name         | Wei Wang       |
 | Date         | 10/06/2024                 |
 | Course       | Fall     |
-| Assignment # |     ˇ                       |
+| Assignment # |     3                       |
 
 # Assignment Overview
 Please add a paragraph or two overviewing the objectives of the assignment.
@@ -12,7 +12,7 @@ Please add a paragraph or two overviewing the objectives of the assignment.
 > The goal of this project is to manage the state elegantly and ensure it is referenced among objects in a well-designed fashion, thereby preventing us from passing the states and achieving low coupling. 
 
 # GitHub Repository Link:
-https://github.com/oliwave/cs-665-assignment-2
+https://github.com/oliwave/cs-665-assignment-3
 
 # Implementation Description 
 
@@ -21,12 +21,22 @@ For each assignment, please answer the following:
 
 ### Explain the level of flexibility in your implementation, including how new object types can be easily added or removed in the future.
 
+- `Email` is an interface so any type of email that needs to extend the capability of eamil can simply implement this interface.
+
 ### Discuss the simplicity and understandability of your implementation, ensuring that it is easy for others to read and maintain.
+
+- From the clients side, we only need to interact with the `EmailGenerator` which delegates all the complexity to the concrete types implementing `Email` interface
+- Now, we can change the Email template during runtime without specifying explicit logic, eliminating complexity.
 
 ### Describe how you have avoided duplicated code and why it is important.
 
+- Each email type has a concrete Class that implements the `Email` interface
+- Therefore, we can keep our code DRY and reuse all the defined email types, such as `Business` and `VIP`.
+
 ### If applicable, mention any design patterns you have used and explain why they were chosen.
 
+- The Strategy pattern eliminate the if-else statement so that we don't need maintain the logic of choosing concrete implementation based on user input
+- This pattern allows us to dynamically swap a pattern at runtime and execute specific tasks without knowing the underlying implementation for each concrete class
 
 # Maven Commands
 
