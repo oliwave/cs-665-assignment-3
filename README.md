@@ -9,7 +9,7 @@
 # Assignment Overview
 Please add a paragraph or two overviewing the objectives of the assignment.
 
-> The goal of this project is to manage the state elegantly and ensure it is referenced among objects in a well-designed fashion, thereby preventing us from passing the states and achieving low coupling. 
+> The goal of this project is to manage the Strategy elegantly and ensure it is referenced among objects in a well-designed fashion, thereby preventing us from explicitly using if-else or switch-case statements. 
 
 # GitHub Repository Link:
 https://github.com/oliwave/cs-665-assignment-3
